@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha conta</title>
+    <link rel="stylesheet" href="css">
+</head>
+<style>
+    *{margin:0; padding: 0; box-sizing: border-box;}
+    body{
+        background-color: aliceblue;
+        text-align: center;
+    }
+
+    form{
+        background-color: rgb(162, 95, 224);
+        max-width: 500px;
+        width:70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    
+    }
+
+    form h3{
+        text-align: center;
+        color: rgb(229, 151, 245);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    form input[type=text],
+    form input[type=password]{
+        width: 100%;
+        height: 45px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        margin: 10px 0;
+        outline: 0;
+    }
+
+    form input[type=submit]{
+    width:100%;
+    height:30px;
+    cursor: pointer;
+    background-color: rgb(229, 151, 245);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+}
+
+form input[type=submit]:hover{
+    background-color: #551A8B;
+}
+</style>
+<body>
+    <img src="../site-final/Imagens/game-mania.PNG" width= "15%">
+    <form>
+        <h3>LOGIN</h3>
+    <input id="email" type="text" name="email" placeholder="Digite seu e-mail">
+    <input id="senha" type="password" name="senha" placeholder="Digite sua senha"> 
+    <input id="acao" type="submit" name="acao" value="Enviar">
+    </form>
+    <script>
+        var email = document.getElementById('email');
+
+        email.addEventListener('focus',()=>{
+            email.style.borderColor = "#912CEE";
+        });
+        email.addEventListener('blur',()=>{
+            email.style.borderColor = "#ccc";
+        });
+
+        var senha = document.getElementById('senha');
+
+        senha.addEventListener('focus',()=>{
+            senha.style.borderColor = "#912CEE";
+        });
+       senha.addEventListener('blur',()=>{
+            senha.style.borderColor = "#ccc";
+        });
+
+
+    </script>
+</body>
+</html>

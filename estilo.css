@@ -1,0 +1,392 @@
+
+* {
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 5x;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.iconsiniciais{
+    margin: 10px 10px 10px -30px;
+    text-align: right;
+    
+
+}
+
+.topo{
+background-color:black;
+display:flex;
+flex-direction: row;
+padding: 2em;
+margin-bottom: 10px;
+width: 100%;
+}
+
+
+.icons-loja{
+    margin: 10px 0px 10px;
+    text-align: right;
+}
+
+
+.categorias ul{
+    background-color:black;
+    list-style-type: none;
+
+}
+
+.categorias ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.categorias ul li a{
+   text-decoration:none;
+   padding: 15px;
+   display: inline-block;
+   margin-bottom: 10px;
+   margin-top: 1px;
+    
+}
+
+.categorias ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border-style:groove;
+    
+ }
+
+ .categorias ul ul{
+    display: none;
+    padding: 0px;
+    position: absolute;
+    left: 0;
+}
+.categorias ul ul li a{
+    display: block;
+}
+
+.categorias ul li:hover ul{
+    display: block;
+}
+
+.categorias ul ul {
+    width: 150px;
+}
+
+.produto p{
+    background: rgb(7, 7, 7);
+    color:rgb(255, 255, 255);
+    font-family:Arial;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.produto p:hover{
+    background-color: rgb(105, 54, 199);
+}
+
+.produto h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.produtos{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+   
+}
+
+.produto {
+    border: solid 1px rgb(105, 54, 199);
+    margin: 10px 10px 10px 10px;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 0 1px 8px 0 rgb(156, 42, 223);
+
+}
+
+.produto a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.sobre-loja{
+    background-color: black;
+    text-align: left;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    border: 5px solid rgb(32, 32, 32);
+    display:flex;
+    justify-content:space-around;
+    
+}
+
+.novidade-loja{
+    background-color:rgb(81, 57, 161);
+    text-align:center;
+    justify-content:space-around;
+    font-size: x-large;
+    color:yellow;
+    margin: 10px 10px 10px 10px;
+    border: 5px solid rgb(180, 87, 255);
+
+
+}  
+
+    .rodape{
+        background-color: aliceblue;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 5px;
+        border: 5px solid rgb(180, 87, 255);
+        justify-content:space-around;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        display: flex;
+        flex-direction:row;        
+        }
+        
+    .redes-sociais{
+        text-align: center;
+        margin: 10px 10px 10px -10px;
+    }
+    
+    .links-footer a{
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+    .nav-button{
+        border: 0;
+        border-radius: 4px;
+        padding: 8px;
+        background-color: violet;
+        margin: 8px;
+        cursor:pointer;
+        display:none;
+    
+    }
+    .nav-button i{
+        color: white;
+        display:none;
+
+    }
+    
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        background-color: rgba(153, 136, 231, 0.9);
+        z-index: 9;
+        left: 0;
+        top:0;
+        overflow-x: hidden;
+        transition: all 0.3s;
+        display:none;
+    }
+    .overlay-content{
+        position: relative;
+        top:25%;
+        width:100%;
+        text-align: center;
+        margin-top: 30px;
+        display:none;
+    }
+    .overlay a{
+       padding: 8px;
+       text-decoration: none;
+       color:rgb(255, 255, 255);
+              font-size: 34px;
+       display:none;
+       transition: 0x3s;
+    }
+    .overlay a:hover, .overlay a:focus{
+        color:violet;
+    }
+    .overlay .closebtn{
+        position: absolute;
+        top:25x;
+        right: 45px;
+        font-size: 60px;
+        display:none;
+    }
+    
+
+
+@media screen and (max-width: 1000px) {
+    .sobre-loja {
+        flex-direction: column;
+        image-resolution: 10px;
+        text-align: center;
+        background-image: url(Imagens/gamemania.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .novidade-loja {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+    color: rgb(221, 221, 221);
+}
+
+.icons-loja{
+    text-align: center;
+}
+
+.news{
+    display: none;
+}
+
+.rodape {
+        flex-direction: column;
+    margin: 10px;
+}
+
+.console-gamer{
+    display:none;
+    
+}
+
+.topo{
+    background-color: black;
+    border-radius: 5px;
+    flex-direction:row;
+    text-align: center;
+   
+}
+.gamemania{
+    flex-direction:column;
+    margin: 10px;
+}
+.arcade-machine{
+    display: none;
+}
+
+.game-mania{
+    flex-direction: column;
+    margin: 10px;
+}
+
+.sobre-loja-img{
+    display: none;
+}
+
+.categorias ul{
+    background-color:rgb(0, 0, 0);
+    font-size: 50%;
+    padding: 0;
+   display: none;
+
+}
+
+.categorias ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.categorias ul li a{
+   text-decoration:none;
+   padding: 15px;
+   display: inline-block;
+   margin-bottom: 10px;
+   margin-top: 1px;
+    
+}
+
+.categorias ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border-style:groove;
+    
+ }
+
+ .categorias ul ul{
+    display: none;
+    padding: 0px;
+    position: absolute;
+    left: 0;
+}
+.categorias ul ul li a{
+    display: block;
+}
+
+.categorias ul li:hover ul{
+    display: block;
+}
+
+.categorias ul ul {
+    width: 130px;
+}
+
+.nav-button{
+    border: 0;
+    border-radius: 4px;
+    padding: auto; 
+    background-color: rgb(131, 35, 221);
+    cursor:pointer;
+    margin: 1px;
+    display: inline;
+    width: 15%;
+    height: 60px;
+
+}
+.nav-button i{
+    color: white;
+    display: flex;
+   
+}
+
+.overlay{
+    height: 100%;
+    background-color: black;
+    background-color: rgba(153, 136, 231, 0.9);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+
+}
+
+.overlay-content{
+    position:absolute;
+    text-align: left;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 2.5vh;
+    display:flex;
+    flex-direction: column;
+    transition: 0x3s;
+    margin: 10px;
+}
+.overlay-content a{
+    font-size: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.overlay-content a:hover, .overlay a:focus{
+    color:rgb(48, 140, 226);
+}
+.overlay .closebtn{
+    font-size: 25px;
+    display: flex;
+}
